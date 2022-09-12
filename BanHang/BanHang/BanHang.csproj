@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B64E1DD0-69D9-43CC-9232-A577CB6BDDE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BanHang</RootNamespace>
+    <AssemblyName>BanHang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="BarcodeLib">
+      <HintPath>C:\Users\tuyet\Downloads\BarcodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraWizard.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="M2Mqtt.Net, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\M2Mqtt.4.3.0.0\lib\net45\M2Mqtt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder">
+      <HintPath>C:\Users\tuyet\Downloads\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zxing, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.8.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.8\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EF\BanHangDbContext.cs" />
+    <Compile Include="EF\ChiTietCuaHang.cs" />
+    <Compile Include="EF\ChiTietHoaDon.cs" />
+    <Compile Include="EF\CuaHang.cs" />
+    <Compile Include="EF\DanhMucSP.cs" />
+    <Compile Include="EF\GioHang.cs" />
+    <Compile Include="EF\HoaDon.cs" />
+    <Compile Include="EF\KhachHang.cs" />
+    <Compile Include="EF\LoSanPham.cs" />
+    <Compile Include="EF\NguonGocSP.cs" />
+    <Compile Include="EF\NhaSX.cs" />
+    <Compile Include="EF\SanPham.cs" />
+    <Compile Include="EF\sysdiagram.cs" />
+    <Compile Include="EF\TaiKhoan.cs" />
+    <Compile Include="EF\ViTri.cs" />
+    <Compile Include="EF\ViTriKhachHang.cs" />
+    <Compile Include="EF\ViTriSanPham.cs" />
+    <Compile Include="Model\CheckOut.cs" />
+    <Compile Include="Model\DangKyModel.cs" />
+    <Compile Include="Model\ImageModel.cs" />
+    <Compile Include="Model\ChiTietHoaDonModel.cs" />
+    <Compile Include="Model\CuaHangThuongXuyenDen.cs" />
+    <Compile Include="Model\DangNhapModel.cs" />
+    <Compile Include="Model\DanhSachSPDaMua.cs" />
+    <Compile Include="Model\GioHangModel.cs" />
+    <Compile Include="Model\ListSP.cs" />
+    <Compile Include="Model\TheoDoiKhModel.cs" />
+    <Compile Include="Model\ThongTinKHModel.cs" />
+    <Compile Include="Model\ThongTinSanPhamModel.cs" />
+    <Compile Include="QLHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLHoaDon.Designer.cs">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListToDatatable.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LoSanPhamModel.cs" />
+    <Compile Include="Model\NguonGocSPModel.cs" />
+    <Compile Include="Model\ThemLoSPModel.cs" />
+    <Compile Include="Model\ThemSPModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLKhachHang.Designer.cs">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QLNguonGocSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QLNguonGocSP.Designer.cs">
+      <DependentUpon>QLNguonGocSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLySP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLySP.Designer.cs">
+      <DependentUpon>QuanLySP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuetQR.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuetQR.Designer.cs">
+      <DependentUpon>QuetQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Infrastructure\DbFactory.cs" />
+    <Compile Include="Services\Infrastructure\IDbFactory.cs" />
+    <Compile Include="Services\Infrastructure\IRepository.cs" />
+    <Compile Include="Services\Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Services\Services\F_ChiTietHoaDon.cs" />
+    <Compile Include="Services\Services\F_DanhMuc.cs" />
+    <Compile Include="Services\Services\F_HoaDon.cs" />
+    <Compile Include="Services\Services\F_LoSanPham.cs" />
+    <Compile Include="Services\Services\F_NguonGocSP.cs" />
+    <Compile Include="Services\Services\F_NSX.cs" />
+    <Compile Include="Services\Services\F_SanPham.cs" />
+    <Compile Include="Services\Services\F_GioHang.cs" />
+    <Compile Include="ThemLoSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThemLoSP.Designer.cs">
+      <DependentUpon>ThemLoSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheoDoiViTriSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TheoDoiViTriSP.Designer.cs">
+      <DependentUpon>TheoDoiViTriSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraCuuTTKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TraCuuTTKH.Designer.cs">
+      <DependentUpon>TraCuuTTKH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QLHoaDon.resx">
+      <DependentUpon>QLHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QLKhachHang.resx">
+      <DependentUpon>QLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLNguonGocSP.resx">
+      <DependentUpon>QLNguonGocSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLySP.resx">
+      <DependentUpon>QuanLySP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuetQR.resx">
+      <DependentUpon>QuetQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemLoSP.resx">
+      <DependentUpon>ThemLoSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheoDoiViTriSP.resx">
+      <DependentUpon>TheoDoiViTriSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraCuuTTKH.resx">
+      <DependentUpon>TraCuuTTKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

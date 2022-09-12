@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanHang", "BanHang\BanHang.csproj", "{B64E1DD0-69D9-43CC-9232-A577CB6BDDE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BanHangAPI1", "BanHangAPI1\BanHangAPI1.csproj", "{E34D5FD7-1048-42C2-BEA0-AE1A293552F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64E1DD0-69D9-43CC-9232-A577CB6BDDE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64E1DD0-69D9-43CC-9232-A577CB6BDDE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64E1DD0-69D9-43CC-9232-A577CB6BDDE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64E1DD0-69D9-43CC-9232-A577CB6BDDE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34D5FD7-1048-42C2-BEA0-AE1A293552F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34D5FD7-1048-42C2-BEA0-AE1A293552F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34D5FD7-1048-42C2-BEA0-AE1A293552F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34D5FD7-1048-42C2-BEA0-AE1A293552F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {729E78D1-8285-4A57-A04A-77852C163010}
+	EndGlobalSection
+EndGlobal
