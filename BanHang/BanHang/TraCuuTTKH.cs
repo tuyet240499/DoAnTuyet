@@ -60,7 +60,7 @@ namespace BanHang
                     ptbAnhKhach.Load(khachHang.AnhKhachDangKy);
                     ptbAnhKhach.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-                int tongtien = 0; 
+                double tongtien = 0; 
                 CuaHangThuongXuyenDen cuahang = new CuaHangThuongXuyenDen();
                 using (var context = new BanHangDbContext())
                 {
@@ -70,7 +70,7 @@ namespace BanHang
                 using (var context = new BanHangDbContext())
                 {
                     SqlParameter param1 = new SqlParameter("@SDT", SDT);
-                    tongtien = await context.Database.SqlQuery<int>("TongTien @SDT", param1).SingleAsync();
+                    tongtien = await context.Database.SqlQuery<double>("TongTien @SDT", param1).SingleAsync();
                 }
                 var tencuahang = db.CuaHangs.Where(x => x.MaCuaHang == cuahang.MaCuaHang).FirstOrDefault();
                 txtCuaHang.Text = tencuahang.TenCuaHang;

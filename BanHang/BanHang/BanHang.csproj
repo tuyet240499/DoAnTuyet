@@ -109,6 +109,7 @@
     <Compile Include="EF\ViTri.cs" />
     <Compile Include="EF\ViTriKhachHang.cs" />
     <Compile Include="EF\ViTriSanPham.cs" />
+    <Compile Include="Model\BoSungThongTinModel.cs" />
     <Compile Include="Model\CheckOut.cs" />
     <Compile Include="Model\DangKyModel.cs" />
     <Compile Include="Model\ImageModel.cs" />
@@ -171,11 +172,13 @@
     <Compile Include="Services\Services\F_ChiTietHoaDon.cs" />
     <Compile Include="Services\Services\F_DanhMuc.cs" />
     <Compile Include="Services\Services\F_HoaDon.cs" />
+    <Compile Include="Services\Services\F_KhachHang.cs" />
     <Compile Include="Services\Services\F_LoSanPham.cs" />
     <Compile Include="Services\Services\F_NguonGocSP.cs" />
     <Compile Include="Services\Services\F_NSX.cs" />
     <Compile Include="Services\Services\F_SanPham.cs" />
     <Compile Include="Services\Services\F_GioHang.cs" />
+    <Compile Include="Services\Services\F_TaiKhoan.cs" />
     <Compile Include="ThemLoSP.cs">
       <SubType>UserControl</SubType>
     </Compile>

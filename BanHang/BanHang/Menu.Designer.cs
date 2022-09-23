@@ -55,11 +55,11 @@ namespace BanHang
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.pn_Main = new DevExpress.XtraEditors.PanelControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.tbTest = new System.Windows.Forms.TextBox();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pn_Main)).BeginInit();
             this.pn_Main.SuspendLayout();
@@ -261,13 +261,18 @@ namespace BanHang
             this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
+            // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 627);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 625);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1173, 38);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1173, 40);
             // 
             // pn_Main
             // 
@@ -276,17 +281,8 @@ namespace BanHang
             this.pn_Main.Location = new System.Drawing.Point(0, 178);
             this.pn_Main.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pn_Main.Name = "pn_Main";
-            this.pn_Main.Size = new System.Drawing.Size(1173, 449);
+            this.pn_Main.Size = new System.Drawing.Size(1173, 447);
             this.pn_Main.TabIndex = 2;
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Blue";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
             // 
             // tbTest
             // 
@@ -294,6 +290,11 @@ namespace BanHang
             this.tbTest.Name = "tbTest";
             this.tbTest.Size = new System.Drawing.Size(296, 23);
             this.tbTest.TabIndex = 0;
+            this.tbTest.Visible = false;
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2010 Blue";
             // 
             // Menu
             // 
